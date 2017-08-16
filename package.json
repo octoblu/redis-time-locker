@@ -1,0 +1,25 @@
+{
+  "name": "redis-time-locker",
+  "version": "1.0.1",
+  "description": "Redlock and early abort based on timestamped data, includes express middleware",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "exit 0",
+    "build": "coffee --compile --output dist/ --map src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/redis-time-locker.git"
+  },
+  "author": "Octoblu Inc <serveradmin@octoblu.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/redis-time-locker/issues"
+  },
+  "homepage": "https://github.com/octoblu/redis-time-locker#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "redlock": "^3.0.0"
+  }
+}
