@@ -2,3 +2,11 @@ language: node_js
 node_js:
 - '0.11'
 - '0.10'
+deploy:
+  provider: npm
+  email: serveradmin@octoblu.com
+  api_key:
+    secure: FBuIROxPQmR2MYOE6IYUPFKM8pUCoaT1PIsPMR9yYN1mVkB6U0dqOoiDkQKjZW+8LkuHcWnhdnO7ADEKo8JItg+sgHY1jHExD4bdDzVn0nbeB2pVyl6bf/1bGKwRnpAoM6MIsPrBH7wPxEW8tw8wJZBWhTxjwCOotZ7UDMTQ9uREIDoG1xwVm9QF/KMFKeAFfwuTb2tqbiGPQT2LLion88GwwGoA3IxGRnaOCPawpocCR54U80ryAa/BQ7O1SpJ7NR5AwU+0QiaTXLTHviLZzpoTuQYV0yXS9agiqSUHoIjJN51NbWUTPwMbz2cUIwIFQZFtuG8YUvyv3gL/z5jIE6Tb1zgHmLrqvg6oogfQYf2h6H5D2X96CbCRkAmws9kalPPiNnLgrDT3QDZ+fccMpe5A7sGpYEMEJUt5EN7RLQOnMtGVni2g+iKhtB6UKYl7Eyg9VCf1E812TOQnbKxggMOIUmEiT8+t3hU++QnpQInpH7yjSZ2QCgFDu0PHWOwOG/iCU8BlE5KdLJNmOlCm8fjHcer3tHGN6ySz0YCaznnH1C2ljvhW5CWCxw7KfiRRKtdWBhIgMcoAPV0hBR2wmnZz82FtpHcnMFF3w4s/WcWuRdCtfU9TX1j6edWYX3nFOwCySsWb1YLehVtmzuRYjvFrDt+TXd3XU1FCjaEFVVU=
+  on:
+    tags: true
+    repo: octoblu/redis-time-locker
