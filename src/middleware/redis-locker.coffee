@@ -17,6 +17,6 @@ locker = ({redis, reqPath='body', uuidPath, timestampPath}) ->
 unlocker = ->
   (req, res, next) ->
     return next() unless req.lock?
-    lock.unlock -> next()
+    req.lock.unlock -> next()
 
 module.exports = {locker, unlocker}
