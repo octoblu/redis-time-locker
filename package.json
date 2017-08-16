@@ -1,6 +1,6 @@
 {
   "name": "redis-time-locker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Redlock and early abort based on timestamped data, includes express middleware",
   "main": "dist/index.js",
   "scripts": {
